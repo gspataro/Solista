@@ -1,11 +1,15 @@
 {
     "name": "gspataro/solista",
     "description": "A static website builder",
-    "version": "1.0.0",
+    "type": "project",
+    "license": "MIT",
     "authors": [
         {
             "name": "Giuseppe Spataro",
             "homepage": "https://giuseppespataro.it"
         }
-    ]
+    ],
+    "require": {
+        "gspataro/orchestra": "^1.0"
+    }
 }
