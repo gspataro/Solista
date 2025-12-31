@@ -10,6 +10,6 @@
         }
     ],
     "require": {
-        "gspataro/orchestra": "dev-main"
+        "gspataro/orchestra": "^1.0"
     }
 }

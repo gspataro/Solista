@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "62efc1fb8f453c87327818a43fa4d1b9",
+    "content-hash": "10cba2b08b92c587c8273d1efaeae4d2",
     "packages": [
         {
             "name": "dflydev/dot-access-data",
@@ -308,7 +308,7 @@
         },
         {
             "name": "gspataro/orchestra",
-            "version": "dev-main",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/gspataro/Orchestra.git",
@@ -332,7 +332,6 @@
                 "twig/twig": "^3.7.1",
                 "vlucas/phpdotenv": "^5.6.1"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "files": [
@@ -357,7 +356,7 @@
             "description": "The framework behind Solista",
             "support": {
                 "issues": "https://github.com/gspataro/Orchestra/issues",
-                "source": "https://github.com/gspataro/Orchestra/tree/main"
+                "source": "https://github.com/gspataro/Orchestra/tree/1.0.0"
             },
             "time": "2025-12-31T12:47:12+00:00"
         },
@@ -2473,9 +2472,7 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "gspataro/orchestra": 20
-    },
+    "stability-flags": {},
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {},
