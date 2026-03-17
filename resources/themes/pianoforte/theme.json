@@ -1,0 +1,17 @@
+{
+    "name": "Pianoforte",
+    "description": "The default theme for Solista",
+    "version": "1.0",
+    "url": "https://giuseppespataro.it",
+    "author": {
+        "name": "Giuseppe Spataro",
+        "url": "https://giuseppespataro.it"
+    },
+    "assets": {
+        "driver": "static",
+        "entries": [
+            "css/app.css",
+            "js/app.js"
+        ]
+    }
+}

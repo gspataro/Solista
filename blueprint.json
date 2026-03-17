@@ -7,7 +7,6 @@
     "schemas": {
         "index": {
             "template": "index",
-            "builder": "simple",
             "slug": "/index",
             "generate": "once"
         }
