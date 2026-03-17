@@ -1,0 +1,17 @@
+{%extends './layout.twig'%}
+{%block body%}
+    <h1>Blog</h1>
+    {%if archive.loop%}
+        <ul>
+            {%for post in archive.loop%}
+                <li>
+                    <a href="{{url(post.id)}}">
+                        {{post.metadata.title}}
+                    </a>
+                </li>
+            {%endfor%}
+        </ul>
+    {%else%}
+        There are currently no articles.
+    {%endif%}
+{%endblock%}

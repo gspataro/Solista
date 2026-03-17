@@ -1,0 +1,6 @@
+{%extends './layout.twig'%}
+{%block body%}
+    <h1>{{post.metadata.title}}</h1>
+    <p>{{post.metadata.description}}</p>
+    {{post.body|orchestra_content}}
+{%endblock%}

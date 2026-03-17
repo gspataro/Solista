@@ -4,11 +4,74 @@
         "description": "PHP static website builder",
         "friendly_urls": true
     },
+    "contents": {
+        "articles": {
+            "files": "articles/*.md",
+            "reader": "markdown",
+            "relationships": [
+                {
+                    "with": "categories",
+                    "field": "metadata.slug",
+                    "operator": "containsAny",
+                    "value": "metadata.categories"
+                }
+            ]
+        },
+        "categories": {
+            "files": "categories/*.md",
+            "reader": "markdown",
+            "relationships": [
+                {
+                    "with": "articles",
+                    "field": "metadata.categories",
+                    "operator": "containsAny",
+                    "value": "metadata.slug"
+                }
+            ]
+        }
+    },
     "schemas": {
         "index": {
             "template": "index",
             "slug": "/index",
             "generate": "once"
+        },
+        "article": {
+            "contents": [
+                "articles"
+            ],
+            "template": "single",
+            "slug": "/article",
+            "generate": "loop",
+            "source": "articles"
+        },
+        "blog": {
+            "contents": [
+                {
+                    "group": "articles",
+                    "order": {
+                        "by": "metadata.published_at",
+                        "direction": "asc"
+                    }
+                }
+            ],
+            "template": "archive",
+            "slug": "/blog",
+            "generate": "archive",
+            "source": "articles"
+        },
+        "categories": {
+            "contents": [
+                "categories"
+            ],
+            "template": "archive",
+            "slug": "/category",
+            "generate": "collection",
+            "source": "categories",
+            "options": {
+                "per_page": 12,
+                "fillWith": "articles"
+            }
         }
     }
 }
