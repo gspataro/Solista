@@ -84,7 +84,6 @@
             "generate": "collection",
             "source": "categories",
             "options": {
-                "per_page": 12,
                 "fillWith": "articles"
             }
         }
