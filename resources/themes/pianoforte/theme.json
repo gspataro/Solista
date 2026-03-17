@@ -8,10 +8,6 @@
         "url": "https://giuseppespataro.it"
     },
     "assets": {
-        "driver": "static",
-        "entries": [
-            "css/app.css",
-            "js/app.js"
-        ]
+        "driver": "vite"
     }
 }

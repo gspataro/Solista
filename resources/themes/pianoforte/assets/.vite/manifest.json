@@ -1,0 +1,14 @@
+{
+  "src/css/app.css": {
+    "file": "app-DP2rzg_V.js",
+    "name": "app",
+    "src": "src/css/app.css",
+    "isEntry": true
+  },
+  "src/js/app.js": {
+    "file": "app-l0sNRNKZ.js",
+    "name": "app",
+    "src": "src/js/app.js",
+    "isEntry": true
+  }
+}
