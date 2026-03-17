@@ -28,10 +28,25 @@
                     "value": "metadata.slug"
                 }
             ]
+        },
+        "welcome": {
+            "files": "welcome.txt",
+            "reader": "text"
         }
     },
     "schemas": {
         "index": {
+            "contents": [
+                "welcome",
+                {
+                    "group": "articles",
+                    "order": {
+                        "by": "metadata.published_at",
+                        "direction": "asc"
+                    },
+                    "limit": 3
+                }
+            ],
             "template": "index",
             "slug": "/index",
             "generate": "once"

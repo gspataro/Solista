@@ -1,4 +1,15 @@
 {%extends './layout.twig'%}
 {%block body%}
-    <h1>Homepage</h1>
+    <h1>Hello!</h1>
+    {{content('welcome').body}}
+    <h2>Latest articles</h2>
+    <ul>
+        {%for post in content('articles')%}
+            <li>
+                <a href="{{url(post.id)}}">
+                    {{post.metadata.title}}
+                </a>
+            </li>
+        {%endfor%}
+    </ul>
 {%endblock%}
