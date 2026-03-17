@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import "./highlighter";
 
 @layer base {
     h1 {
@@ -30,5 +31,56 @@
             text-inherit
             underline
             font-normal;
+    }
+}
+
+@utility container {
+    @apply
+        mx-auto
+        px-4;
+}
+
+@layer components {
+    .prose {
+        @apply text-lg;
+
+        h1, h2, h3, h4, h5, h6 {
+            @apply
+                mt-12
+                mb-4
+                first:mt-0
+                last:mt-0;
+
+            .heading-permalink {
+                @apply hidden;
+            }
+        }
+
+        p {
+            @apply
+                my-4
+                first:mt-0
+                last:mb-0;
+        }
+
+        ul, ol {
+            @apply
+                my-8
+                pl-8
+                first:mt-0
+                last:mb-0;
+
+            ul, ol {
+                @apply my-0;
+            }
+        }
+
+        ul {
+            @apply list-disc;
+        }
+
+        ol {
+            @apply list-decimal;
+        }
     }
 }

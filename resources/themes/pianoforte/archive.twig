@@ -1,7 +1,11 @@
 {%extends './layout.twig'%}
 {%block body%}
     <h1 class="mb-14">
-        Blog
+        {%if archive.collection%}
+            Category: {{archive.collection.metadata.title}}
+        {%else%}
+            Blog
+        {%endif%}
     </h1>
     {%if archive.loop%}
         <ul class="grid grid-cols-3 gap-20">

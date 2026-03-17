@@ -6,8 +6,6 @@ categories:
     - news
 ---
 
-# Hello World 👋
-
 Welcome to your first article built with **Solista**.
 
 If you're reading this page, it means you've already done something important: you've successfully built a working static website from scratch.

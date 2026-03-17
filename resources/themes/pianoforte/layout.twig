@@ -9,9 +9,11 @@
 
     <body>
         {%include './components/header.twig'%}
-        <div class="container my-20 mx-auto">
-            {%block body%}{%endblock%}
-        </div>
+        <main>
+            <div class="container my-20">
+                {%block body%}{%endblock%}
+            </div>
+        </main>
         {%include './components/footer.twig'%}
         {{theme_js()}}
     </body>
