@@ -250,7 +250,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Orchestra",
-                "reference": "0b90428b0a4a73f902675f86b5aaac78a5795b19"
+                "reference": "b8433a1a5dadfedca19d4e6cb3bb4cae27fbc9e4"
             },
             "require": {
                 "filp/whoops": "^2.18",
@@ -259,7 +259,7 @@
                 "league/commonmark": "^2.4.1",
                 "nunomaduro/collision": "^8.9",
                 "symfony/yaml": "^6.3.3",
-                "tempest/highlight": "^1.3.3",
+                "tempest/highlight": "^2.17",
                 "twig/intl-extra": "^3.21.0",
                 "twig/string-extra": "^3.7.1",
                 "twig/twig": "^3.7.1"
@@ -1996,27 +1996,33 @@
         },
         {
             "name": "tempest/highlight",
-            "version": "1.3.4",
+            "version": "2.17.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tempestphp/highlight.git",
-                "reference": "6116e314a170469f55fc559c9739b140a4ace582"
+                "reference": "8e4a11a0cfb09a55fba8f02f9425941580cbb9ef"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tempestphp/highlight/zipball/6116e314a170469f55fc559c9739b140a4ace582",
-                "reference": "6116e314a170469f55fc559c9739b140a4ace582",
+                "url": "https://api.github.com/repos/tempestphp/highlight/zipball/8e4a11a0cfb09a55fba8f02f9425941580cbb9ef",
+                "reference": "8e4a11a0cfb09a55fba8f02f9425941580cbb9ef",
                 "shasum": ""
             },
             "require": {
-                "php": "^8.3"
+                "php": "^8.4"
             },
             "require-dev": {
-                "friendsofphp/php-cs-fixer": "^3.21",
-                "larapack/dd": "^1.1",
+                "assertchris/ellison": "^1.0.2",
+                "friendsofphp/php-cs-fixer": "^3.84",
                 "league/commonmark": "^2.4",
-                "phpstan/phpstan": "^1.10.0",
-                "phpunit/phpunit": "^10.0"
+                "phpbench/phpbench": "^1.4",
+                "phpstan/phpstan": "^2.1",
+                "phpunit/phpunit": "^12.0",
+                "symfony/var-dumper": "^6.4|^7.0|^8.0"
+            },
+            "suggest": {
+                "assertchris/ellison": "Allows you to analyse sentence complexity",
+                "league/commonmark": "Adds markdown support"
             },
             "type": "library",
             "autoload": {
@@ -2037,7 +2043,7 @@
             "description": "Fast, extensible, server-side code highlighting",
             "support": {
                 "issues": "https://github.com/tempestphp/highlight/issues",
-                "source": "https://github.com/tempestphp/highlight/tree/1.3.4"
+                "source": "https://github.com/tempestphp/highlight/tree/2.17.2"
             },
             "funding": [
                 {
@@ -2045,7 +2051,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-04-12T07:38:31+00:00"
+            "time": "2026-03-10T07:05:58+00:00"
         },
         {
             "name": "twig/intl-extra",
