@@ -10,9 +10,9 @@ You made it — this is your second article.
 
 It might sound simple, but having more than one post already makes your site feel more real, more alive… almost **grandioso**.
 
-## 📋 Let's make contents more easy to navigate
+## 📋 Making content easier to navigate
 
-Solista, thanks to the powerful [CommonMark](https://commonmark.thephpleague.com/) package, can also creare a table of contents:
+Thanks to the powerful [CommonMark](https://commonmark.thephpleague.com/) package, Solista can also generate a table of contents:
 
 [TOC]
 
@@ -34,15 +34,15 @@ For example, this post can link back to the first one:
 
 👉 Go back to [Hello World](orchestra://articles/hello-world.md)
 
-But we can also link a page
+But you can also link to a page:
 
 👉 Go back [Home](orchestra://index)
 
-Or even an archive:
+Or even to an archive:
 
 👉 Go back to the [Blog](orchestra://blog)
 
-And thanks to Solista, these links will always resolve correctly, even if your URLs change.
+Thanks to Solista, these links will always resolve correctly, even if your URLs change.
 
 ## 🧠 Thinking in structure
 

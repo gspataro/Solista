@@ -1,8 +1,15 @@
-pre, code {
+pre {
     @apply
         bg-neutral-50
         p-6
         rounded-2xl;
+}
+
+code {
+    @apply
+        bg-neutral-50
+        p-1
+        rounded-xl;
 }
 
 .hl-keyword {

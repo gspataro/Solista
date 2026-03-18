@@ -4,26 +4,25 @@ description: This post is just a draft
 published_at: 2026-03-19
 ---
 
-## How to make a draft?
+## How to create a draft
 
-It's really simple, actually. There are two methods to set a content as draft:
+It's actually very simple. There are two ways to mark a piece of content as a draft:
 
-1. Name the file with an underscore at the start (ex. _draft.md)
-2. In the frontmatter add "draft: true"
+1. Prefix the filename with an underscore (e.g. `_draft.md`)
+2. Add `draft: true` in the frontmatter
 
-Keep in mind that the frontmatter overwrites the behavior of the file name.
+Keep in mind that the frontmatter always takes precedence over the filename.
 
-If, for example, you have a file named "_draft.md" but in the frontmatter you set "draft: false", the content
-will be published.
+For example, if you have a file named `_draft.md` but set `draft: false` in the frontmatter, the content will still be published.
 
-## But why can I see it on Rehearsal?
+## Why can I see it in Rehearsal?
 
-This is a little magic actually. Rehearsal is a preview server, so it makes sense to see the drafted contents
-in there.
+This is intentional. Rehearsal is a preview server, so it makes sense for it to include draft content.
 
-Thanks to this little feature, you can preview contents before publishing it. Rehearsal promises that it won't
-give your secret informations to the build command.
+This allows you to safely preview your work before publishing it. Drafts are never included in the final build, so your unpublished content remains private.
 
-## What about the slugs?
+## What about slugs?
 
-Don't worry. Solista will take care of it, the system will automatically strip the "_" in front of the filename.
+No worries — Solista takes care of that for you.
+
+If a filename starts with an underscore, the system will automatically strip it when generating the slug. This way, your URLs remain clean and consistent.

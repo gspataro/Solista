@@ -14,8 +14,8 @@ export default defineConfig({
                 path.resolve(__dirname, '/src/js/app.js')
             ],
             output: {
-                entryFileNames: `[name]-[hash].[ext]`,
-                chunkFileNames: `[name]-[hash].[ext]`,
+                entryFileNames: `[name]-[hash].js`,
+                chunkFileNames: `[name]-[hash].js`,
                 assetFileNames: `[name]-[hash].[ext]`,
             }
         }

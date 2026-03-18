@@ -38,9 +38,9 @@ This allows Solista to automatically organize:
 - archives
 - relationships between content
 
-## 🧑‍💻 The place for developers
+## 🧑‍💻 A place for developers
 
-If you need to write some technical stuff, [Tempest Highlighter](https://tempestphp.com/3.x/packages/highlight) is here to help too:
+If you need to write technical content, [Tempest Highlighter](https://tempestphp.com/3.x/packages/highlight) has you covered:
 
 ```php
 <?php
