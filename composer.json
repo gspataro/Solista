@@ -11,12 +11,6 @@
         }
     ],
     "require": {
-        "gspataro/orchestra": "2.0.x-dev"
-    },
-    "repositories": [
-        {
-            "type": "path",
-            "url": "../Orchestra"
-        }
-    ]
+        "gspataro/orchestra": "^2.0"
+    }
 }

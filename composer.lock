@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8a5c6867ae416cd03318e83d5e247bb8",
+    "content-hash": "a3f857cff92003a75cf1105fe9a411be",
     "packages": [
         {
             "name": "dflydev/dot-access-data",
@@ -246,11 +246,17 @@
         },
         {
             "name": "gspataro/orchestra",
-            "version": "2.0.x-dev",
+            "version": "2.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gspataro/Orchestra.git",
+                "reference": "e4cab51d1512b5fd22c945754a6f120ec5162ae9"
+            },
             "dist": {
-                "type": "path",
-                "url": "../Orchestra",
-                "reference": "b8433a1a5dadfedca19d4e6cb3bb4cae27fbc9e4"
+                "type": "zip",
+                "url": "https://api.github.com/repos/gspataro/Orchestra/zipball/e4cab51d1512b5fd22c945754a6f120ec5162ae9",
+                "reference": "e4cab51d1512b5fd22c945754a6f120ec5162ae9",
+                "shasum": ""
             },
             "require": {
                 "filp/whoops": "^2.18",
@@ -271,32 +277,14 @@
             },
             "type": "library",
             "autoload": {
-                "psr-4": {
-                    "Orchestra\\": "src/Orchestra/"
-                },
                 "files": [
                     "src/functions.php"
-                ]
-            },
-            "autoload-dev": {
+                ],
                 "psr-4": {
-                    "Orchestra\\Test\\": "tests"
+                    "Orchestra\\": "src/Orchestra/"
                 }
             },
-            "scripts": {
-                "test": [
-                    "./vendor/bin/pest"
-                ],
-                "test:unit": [
-                    "./vendor/bin/pest --group=unit"
-                ],
-                "test:integration": [
-                    "./vendor/bin/pest --group=integration"
-                ],
-                "phpstan": [
-                    "./vendor/bin/phpstan --memory-limit=1G"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -307,22 +295,24 @@
                 }
             ],
             "description": "The framework behind Solista",
-            "transport-options": {
-                "relative": true
-            }
+            "support": {
+                "issues": "https://github.com/gspataro/Orchestra/issues",
+                "source": "https://github.com/gspataro/Orchestra/tree/2.0.2"
+            },
+            "time": "2026-03-20T11:51:43+00:00"
         },
         {
             "name": "league/commonmark",
-            "version": "2.8.1",
+            "version": "2.8.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/commonmark.git",
-                "reference": "84b1ca48347efdbe775426f108622a42735a6579"
+                "reference": "59fb075d2101740c337c7216e3f32b36c204218b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/commonmark/zipball/84b1ca48347efdbe775426f108622a42735a6579",
-                "reference": "84b1ca48347efdbe775426f108622a42735a6579",
+                "url": "https://api.github.com/repos/thephpleague/commonmark/zipball/59fb075d2101740c337c7216e3f32b36c204218b",
+                "reference": "59fb075d2101740c337c7216e3f32b36c204218b",
                 "shasum": ""
             },
             "require": {
@@ -416,7 +406,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-03-05T21:37:03+00:00"
+            "time": "2026-03-19T13:16:38+00:00"
         },
         {
             "name": "league/config",
@@ -2055,7 +2045,7 @@
         },
         {
             "name": "twig/intl-extra",
-            "version": "v3.23.0",
+            "version": "v3.24.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/intl-extra.git",
@@ -2103,7 +2093,7 @@
                 "twig"
             ],
             "support": {
-                "source": "https://github.com/twigphp/intl-extra/tree/v3.23.0"
+                "source": "https://github.com/twigphp/intl-extra/tree/v3.24.0"
             },
             "funding": [
                 {
@@ -2119,7 +2109,7 @@
         },
         {
             "name": "twig/string-extra",
-            "version": "v3.23.0",
+            "version": "v3.24.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/string-extra.git",
@@ -2170,7 +2160,7 @@
                 "unicode"
             ],
             "support": {
-                "source": "https://github.com/twigphp/string-extra/tree/v3.23.0"
+                "source": "https://github.com/twigphp/string-extra/tree/v3.24.0"
             },
             "funding": [
                 {
@@ -2186,16 +2176,16 @@
         },
         {
             "name": "twig/twig",
-            "version": "v3.23.0",
+            "version": "v3.24.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "a64dc5d2cc7d6cafb9347f6cd802d0d06d0351c9"
+                "reference": "a6769aefb305efef849dc25c9fd1653358c148f0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/a64dc5d2cc7d6cafb9347f6cd802d0d06d0351c9",
-                "reference": "a64dc5d2cc7d6cafb9347f6cd802d0d06d0351c9",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/a6769aefb305efef849dc25c9fd1653358c148f0",
+                "reference": "a6769aefb305efef849dc25c9fd1653358c148f0",
                 "shasum": ""
             },
             "require": {
@@ -2205,7 +2195,8 @@
                 "symfony/polyfill-mbstring": "^1.3"
             },
             "require-dev": {
-                "phpstan/phpstan": "^2.0",
+                "php-cs-fixer/shim": "^3.0@stable",
+                "phpstan/phpstan": "^2.0@stable",
                 "psr/container": "^1.0|^2.0",
                 "symfony/phpunit-bridge": "^5.4.9|^6.4|^7.0"
             },
@@ -2249,7 +2240,7 @@
             ],
             "support": {
                 "issues": "https://github.com/twigphp/Twig/issues",
-                "source": "https://github.com/twigphp/Twig/tree/v3.23.0"
+                "source": "https://github.com/twigphp/Twig/tree/v3.24.0"
             },
             "funding": [
                 {
@@ -2261,15 +2252,13 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-01-23T21:00:41+00:00"
+            "time": "2026-03-17T21:31:11+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "gspataro/orchestra": 20
-    },
+    "stability-flags": {},
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {},
