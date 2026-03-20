@@ -64,6 +64,16 @@ This article belongs to the **News** category.
 
 Categories allow you to create automatic archives and better organize your content.
 
+## 🏞️ Images
+
+Don't forget to include images in your posts.
+
+Solista will automagically resolve only the requested images and resize them too.
+
+Look for example to this incredible picture by [Though Catalog](https://unsplash.com/it/foto/person-holding-ballpoint-pen-writing-on-notebook-505eectW54k):
+
+![Hello world](/hello-world.jpg?variant=medium "Hello world")
+
 ## ⚡ Performance
 
 During development, Solista uses an advanced caching system to keep builds extremely fast.
