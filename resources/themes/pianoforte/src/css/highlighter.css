@@ -1,0 +1,93 @@
+pre {
+    @apply
+        bg-neutral-50
+        p-6
+        rounded-2xl;
+}
+
+code {
+    @apply
+        bg-neutral-50
+        p-1
+        rounded-xl;
+}
+
+.hl-keyword {
+    @apply text-blue-500;
+}
+
+.hl-property {
+    @apply text-green-600;
+}
+
+.hl-attribute {
+    @apply italic;
+}
+
+.hl-type {
+    @apply text-red-500;
+}
+
+.hl-generic {
+    @apply text-violet-600;
+}
+
+.hl-number,
+.hl-literal,
+.hl-value {
+    @apply text-black;
+}
+
+.hl-variable {
+    @apply text-black;
+}
+
+.hl-comment {
+    @apply text-gray-500;
+}
+
+.hl-blur {
+    @apply blur-xs;
+}
+
+.hl-strong {
+    @apply font-bold;
+}
+
+.hl-em {
+    @apply italic;
+}
+
+.hl-addition {
+    @apply
+        min-w-full
+        bg-green-100;
+}
+
+.hl-deletion {
+    @apply
+        min-w-full
+        bg-red-100;
+}
+
+.hl-gutter {
+    @apply
+        inline-block
+        text-sm
+        text-gray-500
+        p-[1ch]
+        mr-[1ch]
+        select-none;
+}
+
+.hl-gutter-addition {
+    @apply
+        bg-green-600
+        text-white;
+}
+
+.hl-gutter-deletion {
+    @apply
+        bg-red-600
+        text-white;
+}

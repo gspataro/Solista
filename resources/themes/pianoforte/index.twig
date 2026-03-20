@@ -1,0 +1,23 @@
+{%extends './layout.twig'%}
+{%block body%}
+    <section class="bg-neutral-300 p-20 rounded-2xl mb-20">
+        <h1 class="mb-4">
+            Hello!
+        </h1>
+        <p class="text-lg">
+            {{content('welcome').body}}
+        </p>
+    </section>
+    <section>
+        <h2 class="mb-10">
+            Latest articles
+        </h2>
+        <ul class="grid grid-cols-3 gap-20">
+            {%for post in content('articles')%}
+                <li>
+                    {%include './components/card.twig' with {post: post} only%}
+                </li>
+            {%endfor%}
+        </ul>
+    </section>
+{%endblock%}

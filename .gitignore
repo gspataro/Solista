@@ -1,16 +1,8 @@
 .DS_Store
-.env*
-!.env.example
 
 /.vscode
 /vendor
-/node_modules
 
-/contents/data/*
-!/contents/data/.gitkeep
-
-/contents/media/*
-!/contents/data/.gitkeep
-
+/cache
 /public/*
 !/public/.htaccess

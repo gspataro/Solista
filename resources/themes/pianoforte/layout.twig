@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{{website.name}}</title>
+        {{theme_css()}}
+    </head>
+
+    <body>
+        {%include './components/header.twig'%}
+        <main>
+            <div class="container my-20">
+                {%block body%}{%endblock%}
+            </div>
+        </main>
+        {%include './components/footer.twig'%}
+        {{theme_js()}}
+    </body>
+</html>

@@ -1,0 +1,40 @@
+{%extends './layout.twig'%}
+{%block body%}
+    <h1 class="mb-14">
+        {%if archive.collection%}
+            Category: {{archive.collection.metadata.title}}
+        {%else%}
+            Blog
+        {%endif%}
+    </h1>
+    {%if archive.loop%}
+        <ul class="grid grid-cols-3 gap-20">
+            {%for post in archive.loop%}
+                <li>
+                    {%include './components/card.twig' with {post: post} only%}
+                </li>
+            {%endfor%}
+        </ul>
+        {%if archive.pagination.next or archive.pagination.prev%}
+            <ul class="w-full flex justify-between mt-20">
+                {%if archive.pagination.prev%}
+                    <li>
+                        <a href="{{url(archive.pagination.prev)}}">
+                            &larr; Previous
+                        </a>
+                    </li>
+                {%endif%}
+                <li></li>
+                {%if archive.pagination.next%}
+                    <li>
+                        <a href="{{url(archive.pagination.next)}}">
+                            Next &rarr;
+                        </a>
+                    </li>
+                {%endif%}
+            </ul>
+        {%endif%}
+    {%else%}
+        There are currently no articles.
+    {%endif%}
+{%endblock%}

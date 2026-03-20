@@ -1,0 +1,10 @@
+<article>
+    <h1 class="mb-2 text-2xl">
+        <a href="{{url(post.id)}}">
+            {{post.metadata.title}}
+        </a>
+    </h1>
+    <datetime date="{{post.metadata.published_at|date('c')}}">
+        {{post.metadata.published_at|date('j F Y')}}
+    </datetime>
+</article>
