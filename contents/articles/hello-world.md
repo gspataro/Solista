@@ -68,11 +68,13 @@ Categories allow you to create automatic archives and better organize your conte
 
 Don't forget to include images in your posts.
 
-Solista will automagically resolve only the requested images and resize them too.
+Solista automatically resolves only the images that are actually used on the page and can resize them on the fly.
 
-Look for example to this incredible picture by [Though Catalog](https://unsplash.com/it/foto/person-holding-ballpoint-pen-writing-on-notebook-505eectW54k):
+For example, take a look at this picture by [Thought Catalog](https://unsplash.com/it/foto/person-holding-ballpoint-pen-writing-on-notebook-505eectW54k):
 
 ![Hello world](/hello-world.jpg?variant=medium "Hello world")
+
+When working with local images, Solista can generate different variants based on your `blueprint.json` and automatically provide the correct `srcset` attribute.
 
 ## ⚡ Performance
 
