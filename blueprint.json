@@ -29,6 +29,10 @@
                 }
             ]
         },
+        "pages": {
+            "files": "pages/*.md",
+            "reader": "markdown"
+        },
         "welcome": {
             "files": "welcome.txt",
             "reader": "text"
@@ -50,6 +54,15 @@
             "template": "index",
             "slug": "/index",
             "generate": "once"
+        },
+        "pages": {
+            "contents": [
+                "pages"
+            ],
+            "template": "page",
+            "slug": "/",
+            "generate": "loop",
+            "source": "pages"
         },
         "404": {
             "template": "404",
