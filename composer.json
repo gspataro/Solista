@@ -11,6 +11,6 @@
         }
     ],
     "require": {
-        "gspataro/orchestra": "^2.0"
+        "gspataro/orchestra": "^2.1"
     }
 }
